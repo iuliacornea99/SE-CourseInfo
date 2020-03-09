@@ -110,7 +110,7 @@ TEST(gameTest, setWeeksToBePlayedTest){
 }
 
 TEST(gameTest, setInfoCodeTest){
-    
+
     Game g;
     g.setInfoCode(3);
     EXPECT_EQ(3, g.getInfoCode());
@@ -221,13 +221,13 @@ TEST(instructorTest, getInstrEmailTest){
 TEST(instructorTest, setInstrPasswordTest){
     Instructor i;
     i.setInstrPasswordTest("superstrongpassword");
-    EXPECT_EQ("superstrongpassword", i.getInstrEmail());
+    EXPECT_EQ("superstrongpassword", i.getInstrPassword());
 }
 
 TEST(instructorTest, getInstrEmailTest){
   Instructor i;
   i.setInstrPasswordTest("weakpassword");
-  EXPECT_EQ("weakpassword", i.getInstrEmail());
+  EXPECT_EQ("weakpassword", i.getInstrPassword());
 }
 
 TEST(instructorTest, setInstrIdTest){
