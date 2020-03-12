@@ -17,8 +17,10 @@ TEST(playerTest, increaseInventoryTest) {
 
     Player p;
     int curr_inv = p.getInventory();
-    EXPECT_EQ((curr_inv+3, p.increaseInventory(3));
-    EXPECT_EQ((curr_inv+1000000, p.increaseInventory(1000000)));
+    curr_inc += 3;
+    EXPECT_EQ(curr_inv, p.increaseInventory(3));
+    curr_inv += 10000;
+    EXPECT_EQ(curr_inv, p.increaseInventory(1000000));
 }
 
 TEST(playerTest, getBackorderTest){
@@ -31,15 +33,15 @@ TEST(playerTest, getBackorderTest){
 TEST(playerTest, getCostTest){
 
     Player p;
-    p.setCost(2.5);
-    EXPECT_EQ(2.5, p.getCost());
+    p.setCost(2);
+    EXPECT_EQ(2, p.getCost());
 }
 
 TEST(playerTest, getInventoryTest){
 
     Player p;
     p.setInventory(10000);
-    EXPECT_EQ(10000, p.getInventory);
+    EXPECT_EQ(10000, p.getInventory());
 }
 
 TEST(playerTest, setBackorderTest){
@@ -53,7 +55,7 @@ TEST(playerTest, setCostTest){
 
     Player p;
     p.setCost(30);
-    EXPECT_EQ(30, p.getCostTest());
+    EXPECT_EQ(30, p.getCost());
 }
 
 TEST(playerTest, setInventoryTest){
@@ -75,8 +77,8 @@ TEST(playerTest, setOrderTest) {
 TEST(playerTest, getOrderTest) {
 
     Player p;
-    p.setOrder(5);
-    EXPECT_EQ(5, p.getOrder());
+    p.setOrderDelay(5);
+    EXPECT_EQ(5, p.getOrderDelay());
 }
 
 TEST(playerTest, setDemandTest) {
@@ -207,36 +209,43 @@ TEST(gameTest, setCurrentWeekTest) {
 // Instructor Class Test Cases
 
 TEST(instructorTest, setInstrEmailTest){
+
     Instructor i;
     i.setInstrEmail("hi.there@jacobs-university.de");
     EXPECT_EQ("hi.there@jacobs-university.de", i.getInstrEmail());
 }
 
 TEST(instructorTest, getInstrEmailTest){
+
   Instructor i;
   i.setInstrEmail("hi.again@jacobs-university.de");
+  string email = "hi.again@jacobs-university.de";
   EXPECT_EQ( email, i.getInstrEmail());
 }
 
 TEST(instructorTest, setInstrPasswordTest){
+
     Instructor i;
-    i.setInstrPasswordTest("superstrongpassword");
+    i.setInstrPassword("superstrongpassword");
     EXPECT_EQ("superstrongpassword", i.getInstrPassword());
 }
 
 TEST(instructorTest, getInstrEmailTest){
+
   Instructor i;
-  i.setInstrPasswordTest("weakpassword");
+  i.setInstrPassword("weakpassword");
   EXPECT_EQ("weakpassword", i.getInstrPassword());
 }
 
 TEST(instructorTest, setInstrIdTest){
+
   Instructor i;
   i.setInstrID(2020);
   EXPECT_EQ(2020, i.getInstrID());
 }
 
 TEST(instructorTest, getInstrIdTest){
+
   Instructor i;
   i.setInstrID(30);
   EXPECT_EQ(30, i.getInstrID());
