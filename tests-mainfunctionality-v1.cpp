@@ -10,17 +10,14 @@ TEST(playerTest, decreaseInventoryTest ) {
     Player p;
     int curr_inv = p.getInventory();
     EXPECT_EQ(curr_inv-3, p.decreaseInventory(3));
-
 }
 
 TEST(playerTest, increaseInventoryTest) {
 
     Player p;
     int curr_inv = p.getInventory();
-    curr_inc += 3;
-    EXPECT_EQ(curr_inv, p.increaseInventory(3));
-    curr_inv += 10000;
-    EXPECT_EQ(curr_inv, p.increaseInventory(1000000));
+    EXPECT_EQ((curr_inv+3, p.increaseInventory(3));
+    EXPECT_EQ((curr_inv+3+1000000, p.increaseInventory(1000000)));
 }
 
 TEST(playerTest, getBackorderTest){
@@ -243,7 +240,7 @@ TEST(instructorTest, setInstrIdTest){
   i.setInstrID(2020);
   EXPECT_EQ(2020, i.getInstrID());
 }
-
+ff
 TEST(instructorTest, getInstrIdTest){
 
   Instructor i;
