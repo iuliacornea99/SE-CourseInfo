@@ -90,20 +90,20 @@ TEST(playerTest, setInventoryTest){
     EXPECT_EQ(40, p.getInventory());
 }
 
-TEST(playerTest, setOrderTest) {
+TEST(playerTest, setOrderPlacedTest) {
 
     Player p;
-    p.setOrder(3);
-    EXPECT_EQ(3, p.getOrder());
-    p.setOrder(5);
-    EXPECT_EQ(5, p.getOrder());
+    p.setOrderPlaced(3);
+    EXPECT_EQ(3, p.getOrderPlaced());
+    p.setOrderPlaced(5);
+    EXPECT_EQ(5, p.getOrderPlaced());
 }
 
-TEST(playerTest, getOrderTest) {
+TEST(playerTest, getOrderPlacedTest) {
 
     Player p;
-    p.setOrder(10);
-    EXPECT_EQ(10, p.getOrder());
+    p.setOrderPlaced(10);
+    EXPECT_EQ(10, p.getOrderPlaced());
 }
 
 TEST(playerTest, setDemandTest) {
