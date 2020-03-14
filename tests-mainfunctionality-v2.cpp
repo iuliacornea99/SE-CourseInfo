@@ -45,7 +45,7 @@ TEST(playerTest, increaseInventoryTest) {
 
     Player p;
     int curr_inv = p.getInventory();
-    EXPECT_EQ((curr_inv+3, p.increaseInventory(3));
+    EXPECT_EQ(curr_inv+3, p.increaseInventory(3));
 }
 
 TEST(playerTest, getBackorderTest){
