@@ -362,7 +362,7 @@ TEST(instructorTest, setInstrPasswordTest){
     EXPECT_EQ("superstrongpassword", i.getInstrPassword());
 }
 
-TEST(instructorTest, getInstrEmailTest){
+TEST(instructorTest, getInstrPasswordTest){
 
   Instructor i;
   i.setInstrPassword("weakpassword");
