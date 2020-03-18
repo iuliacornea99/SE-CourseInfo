@@ -225,22 +225,22 @@ TEST(gameTest, setPWholesalerIdTest){
 TEST(gameTest, setPRetailerIdTest){
 
     Game g;
-    g.setRetailerId(24);
-    EXPECT_EQ(24, g.getRetailerId(24));
+    g.setPRetailerId(24);
+    EXPECT_EQ(24, g.getPRetailerId());
 }
 
 TEST(gameTest, getPRetailerIdTest){
 
     Game g;
-    g.setRetailerId(24);
-    EXPECT_EQ(24, g.getRetailerId(24));
+    g.setPRetailerId(24);
+    EXPECT_EQ(24, g.getPRetailerId());
 }
 
 TEST(gamTest, getOrderTimeDelayTest){
 
     Game g;
     g.setOrderTimeDelay(3);
-    EXPECT_EQ(3, g.getORderTimeDelay());
+    EXPECT_EQ(3, g.getOrderTimeDelay());
 }
 
 TEST(gamTest, setOrderTimeDelayTest){
@@ -260,15 +260,15 @@ TEST(gameTest, advanceWeekTest){
 TEST(gameTest, setWeeksToBePlayedTest){
 
     Game g;
-    g.setweeksToBePlayed(2);
-    EXPECT_EQ(2, getweeksToBePlayed());
+    g.setWeeksToBePlayed(2);
+    EXPECT_EQ(2, g.getWeeksToBePlayed());
 }
 
 TEST(gameTest, getWeeksToBePlayedTest) {
 
     Game g;
     EXPECT_EQ(26, g.getWeeksToBePlayed()); //checking default value
-    g.setweeksToBePlayed(2);
+    g.setWeeksToBePlayed(2);
     EXPECT_EQ(2, g.getWeeksToBePlayed());
 }
 
@@ -351,7 +351,7 @@ TEST(instructorTest, getInstrEmailTest){
 
   Instructor i;
   i.setInstrEmail("hi.again@jacobs-university.de");
-  string email = "hi.again@jacobs-university.de";
+  std::string email = "hi.again@jacobs-university.de";
   EXPECT_EQ( email, i.getInstrEmail());
 }
 
