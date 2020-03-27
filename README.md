@@ -16,6 +16,7 @@ make
 ./beergame-tests
 ```
 REMINDER: The Doxygen documentation should also have been generated in the build directory after those commands.
+It is not an issue if the command to run the executables inside the build directory is different (for example, ./src/beergame or ./test/beergame-tests). Our script will search for the executable inside the build directory and execute it.
 
  ### Gitignore
 
