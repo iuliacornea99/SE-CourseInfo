@@ -15,6 +15,7 @@ make
 ./beergame
 ./beergame-tests
 ```
+REMINDER: The Doxygen documentation should also have been generated in the build directory after those commands.
 
  ### Gitignore
 
