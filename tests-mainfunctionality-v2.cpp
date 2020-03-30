@@ -1,5 +1,4 @@
 #include "gtest/gtest.h"
-#include "../factory.h"
 #include "../player.h"
 #include "../game.h"
 #include "../instructor.h"
