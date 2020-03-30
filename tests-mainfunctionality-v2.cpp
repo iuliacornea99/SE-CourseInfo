@@ -235,18 +235,18 @@ TEST(gameTest, getPRetailerIdTest){
     EXPECT_EQ(24, g.getPRetailerId());
 }
 
-TEST(gamTest, getOrderTimeDelayTest){
+TEST(gamTest, getOrderDelayTest){
 
     Game g;
-    g.setOrderTimeDelay(3);
-    EXPECT_EQ(3, g.getOrderTimeDelay());
+    g.setOrderDelay(3);
+    EXPECT_EQ(3, g.getOrderDelay());
 }
 
-TEST(gamTest, setOrderTimeDelayTest){
+TEST(gamTest, setOrderDelayTest){
 
     Game g;
-    g.setOrderTimeDelay(4);
-    EXPECT_EQ(4, g.getOrderTimeDelay());
+    g.setOrderDelay(4);
+    EXPECT_EQ(4, g.getOrderDelay());
 }
 
 TEST(gameTest, advanceWeekTest){
