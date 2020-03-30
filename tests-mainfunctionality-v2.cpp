@@ -93,17 +93,17 @@ TEST(playerTest, setInventoryTest){
 TEST(playerTest, setOrderPlacedTest) {
 
     Player p;
-    p.setOrderPlaced(3);
-    EXPECT_EQ(3, p.getOrderPlaced());
-    p.setOrderPlaced(5);
-    EXPECT_EQ(5, p.getOrderPlaced());
+    p.setOrderPlaced(true);
+    EXPECT_EQ(true, p.isOrderPlaced());
+    p.setOrderPlaced(false);
+    EXPECT_EQ(false, p.isOrderPlaced());
 }
 
-TEST(playerTest, getOrderPlacedTest) {
+TEST(playerTest, isOrderPlacedTest) {
 
     Player p;
-    p.setOrderPlaced(10);
-    EXPECT_EQ(10, p.getOrderPlaced());
+    p.setOrderPlaced(false);
+    EXPECT_EQ(false, p.isOrderPlaced());
 }
 
 TEST(playerTest, setDemandTest) {
