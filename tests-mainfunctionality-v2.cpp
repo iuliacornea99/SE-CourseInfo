@@ -384,18 +384,18 @@ TEST(instructorTest, getInstrIdTest){
 
 // Order Class Test Cases
 
-TEST(orderTest, getOrderIdTest){
+TEST(orderTest, getEventIdTest){
 
     Order o;
-    o.setOrderId(23);
-    EXPECT_EQ(23, o.getOrderId());
+    o.setEventId(23);
+    EXPECT_EQ(23, o.getEventId());
 }
 
-TEST(orderTest, setOrderIdTest){
+TEST(orderTest, setEventIdTest){
 
     Order o;
-    o.setOrderId(32);
-    EXPECT_EQ(32, o.getOrderId());
+    o.setEventId(32);
+    EXPECT_EQ(32, o.getEventId());
 }
 
 TEST(orderTest, getGIdTest){
