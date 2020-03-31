@@ -78,7 +78,7 @@ TEST(playerTest, setTotalCostTest){
 
 }
 
-TEST(playerTest, getOrderReceivedTest){
+TEST(playerTest, isOrderReceivedTest){
 
 }
 
@@ -86,7 +86,7 @@ TEST(playerTest, setOrderReceivedTest){
 
 }
 
-TEST(playerTest, getShipmentReceivedTest){
+TEST(playerTest, isShipmentReceivedTest){
 
 }
 
@@ -98,7 +98,7 @@ TEST(playerTest, setOrderPlacedTest) {
 
 }
 
-TEST(playerTest, getOrderPlacedTest) {
+TEST(playerTest, isOrderPlacedTest) {
 
 }
 
@@ -106,7 +106,7 @@ TEST(playerTest, setShipmentPlacedTest) {
 
 }
 
-TEST(playerTest, getShipmentPlacedTest) {
+TEST(playerTest, isShipmentPlacedTest) {
 
 }
 
