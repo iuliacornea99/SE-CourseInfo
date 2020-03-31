@@ -1,5 +1,4 @@
 #include "gtest/gtest.h"
-#include "../factory.h"
 #include "../player.h"
 #include "../game.h"
 #include "../instructor.h"
@@ -93,17 +92,17 @@ TEST(playerTest, setInventoryTest){
 TEST(playerTest, setOrderPlacedTest) {
 
     Player p;
-    p.setOrderPlaced(3);
-    EXPECT_EQ(3, p.getOrderPlaced());
-    p.setOrderPlaced(5);
-    EXPECT_EQ(5, p.getOrderPlaced());
+    p.setOrderPlaced(true);
+    EXPECT_EQ(true, p.isOrderPlaced());
+    p.setOrderPlaced(false);
+    EXPECT_EQ(false, p.isOrderPlaced());
 }
 
-TEST(playerTest, getOrderPlacedTest) {
+TEST(playerTest, isOrderPlacedTest) {
 
     Player p;
-    p.setOrderPlaced(10);
-    EXPECT_EQ(10, p.getOrderPlaced());
+    p.setOrderPlaced(false);
+    EXPECT_EQ(false, p.isOrderPlaced());
 }
 
 TEST(playerTest, setDemandTest) {
@@ -236,18 +235,18 @@ TEST(gameTest, getPRetailerIdTest){
     EXPECT_EQ(24, g.getPRetailerId());
 }
 
-TEST(gamTest, getOrderTimeDelayTest){
+TEST(gamTest, getOrderDelayTest){
 
     Game g;
-    g.setOrderTimeDelay(3);
-    EXPECT_EQ(3, g.getOrderTimeDelay());
+    g.setOrderDelay(3);
+    EXPECT_EQ(3, g.getOrderDelay());
 }
 
-TEST(gamTest, setOrderTimeDelayTest){
+TEST(gamTest, setOrderDelayTest){
 
     Game g;
-    g.setOrderTimeDelay(4);
-    EXPECT_EQ(4, g.getOrderTimeDelay());
+    g.setOrderDelay(4);
+    EXPECT_EQ(4, g.getOrderDelay());
 }
 
 TEST(gameTest, advanceWeekTest){
@@ -385,18 +384,18 @@ TEST(instructorTest, getInstrIdTest){
 
 // Order Class Test Cases
 
-TEST(orderTest, getOrderIdTest){
+TEST(orderTest, getEventIdTest){
 
     Order o;
-    o.setOrderId(23);
-    EXPECT_EQ(23, o.getOrderId());
+    o.setEventId(23);
+    EXPECT_EQ(23, o.getEventId());
 }
 
-TEST(orderTest, setOrderIdTest){
+TEST(orderTest, setEventIdTest){
 
     Order o;
-    o.setOrderId(32);
-    EXPECT_EQ(32, o.getOrderId());
+    o.setEventId(32);
+    EXPECT_EQ(32, o.getEventId());
 }
 
 TEST(orderTest, getGIdTest){
